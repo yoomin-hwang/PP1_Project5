@@ -4,12 +4,12 @@
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="Market">
 <insert id="insertMarket">
-    insert into MARKET(sellername, product, price, category, location, dealtime)
+    insert into MARKET(sellername, product, price, category, detail, location, dealtime)
     values
-    (#{sellername}, #{product}, #{price}, #{category}, #{location}, #{dealtime})
+    (#{sellername}, #{product}, #{price}, #{category}, #{detail}, #{location}, #{dealtime})
 </insert>
 <update id="updateMarket">
-    update MARKET set sellername=#{sellername}, product=#{product}, price=#{price}, category=#{category}, location=#{location}, dealtime=#{dealtime} where seq=#{seq}
+    update MARKET set sellername=#{sellername}, product=#{product}, price=#{price}, category=#{category}, detail=#{detail}, location=#{location}, dealtime=#{dealtime} where seq=#{seq}
 </update>
 <delete id="deleteMarket">
     delete from MARKET where seq=#{seq}

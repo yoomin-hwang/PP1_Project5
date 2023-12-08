@@ -8,6 +8,16 @@ public class MarketVO {
     private String product;
     private int price;
     private String category;
+
+    public String getDetail() {
+        return detail;
+    }
+
+    public void setDetail(String detail) {
+        this.detail = detail;
+    }
+
+    private String detail;
     private String location;
     private String dealtime;
     private Date regdate;
