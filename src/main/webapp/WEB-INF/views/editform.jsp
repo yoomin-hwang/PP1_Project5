@@ -21,7 +21,7 @@
 		<tr><td>Category:</td><td><form:input type="text" path="category"/></td></tr>
 		<tr><td>Detail:</td><td><form:textarea name="detail" cols="50" rows="5" path="detail"/></td></tr>
 		<tr><td>Location:</td><td><form:input type="text" path="location"/></td></tr>
-		<tr><td>Time::</td><td><form:input type="text" path="dealtime"/></td></tr>
+		<tr><td>Time::</td><td><form:input type="date" path="dealtime"/></td></tr>
 		<tr><td><a href="list.jsp">View All Records</a></td><td align="right"><input type="submit" value="Edit Post"/></td></tr>
 	</table>
 </form:form>

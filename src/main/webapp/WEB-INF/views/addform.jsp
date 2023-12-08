@@ -39,7 +39,7 @@
 		</tr>
 		<tr>
 			<td>Time:</td>
-			<td><input type="text" name="dealtime"/></td>
+			<td><input type="date" name="dealtime" value="2023-12-16"/></td>
 		</tr>
 		<tr>
 			<td><a href="list">View All Records</a></td>
