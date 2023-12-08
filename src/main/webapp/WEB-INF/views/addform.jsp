@@ -14,12 +14,16 @@
 <form action="addok" method="post">
 	<table>
 		<tr>
-			<td>Title:</td>
-			<td><input type="text" name="title"/></td>
+			<td>Seller Name:</td>
+			<td><input type="text" name="sellername"/></td>
 		</tr>
 		<tr>
-			<td>Writer:</td>
-			<td><input type="text" name="writer"/></td>
+			<td>Product Name:</td>
+			<td><input type="text" name="product"/></td>
+		</tr>
+		<tr>
+			<td>Price:</td>
+			<td><input type="text" name="price"/></td>
 		</tr>
 		<tr>
 			<td>Content:</td>

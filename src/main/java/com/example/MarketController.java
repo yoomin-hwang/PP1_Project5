@@ -12,7 +12,7 @@ import java.util.List;
 
 @Controller
 
-public class BoardController {
+public class MarketController {
     @RequestMapping("/")
     public String home(){
 
@@ -20,58 +20,58 @@ public class BoardController {
     }
 
     @Autowired
-    BoardServiceImpl boardService;
+    MarketServiceImpl marketService;
 
-    @RequestMapping(value = "board/list", method = RequestMethod.GET)
-    public String boardlist(Model model) {
-        List<BoardVO> list = boardService.getBoardList(); // 데이터를 가져오는 적절한 메서드 호출
+    @RequestMapping(value = "market/list", method = RequestMethod.GET)
+    public String marketlist(Model model) {
+        List<MarketVO> list = marketService.getMarketList(); // 데이터를 가져오는 적절한 메서드 호출
         model.addAttribute("list", list);
         //model.addAttribute("list", boardService.getBoardList());
         return "list";
     }
 
-    @RequestMapping(value = "board/add", method = RequestMethod.GET)
+    @RequestMapping(value = "market/add", method = RequestMethod.GET)
     public String addPost() {
         return "addform";
     }
 
-    @RequestMapping(value="board/addok", method=RequestMethod.POST)
-    public String addPostOk(BoardVO vo) {
-        if(boardService.insertBoard(vo) == 0)
+    @RequestMapping(value="market/addok", method=RequestMethod.POST)
+    public String addPostOk(MarketVO vo) {
+        if(marketService.insertMarket(vo) == 0)
             System.out.println("데이터 추가 실패 ");
         else
             System.out.println("데이터 추가 성공!!!");
         return "redirect:list";
     }
 
-    @RequestMapping(value = "board/editform/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "market/editform/{id}", method = RequestMethod.GET)
     public String editPost(@PathVariable("id") int id, Model model) {
-        BoardVO boardVO = boardService.getBoard(id);
+        MarketVO boardVO = marketService.getMarket(id);
         model.addAttribute("u", boardVO);
         return "editform";
     }
 
-    @RequestMapping(value = "board/editok", method = RequestMethod.POST)
-    public String editPostOk(BoardVO vo) {
-        if(boardService.updateBoard(vo) == 0)
+    @RequestMapping(value = "market/editok", method = RequestMethod.POST)
+    public String editPostOk(MarketVO vo) {
+        if(marketService.updateMarket(vo) == 0)
             System.out.println("데이터 수정 실패 ");
         else
             System.out.println("데이터 수정 성공!!!");
         return "redirect:list";
     }
 
-    @RequestMapping(value = "board/deleteok/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "market/deleteok/{id}", method = RequestMethod.GET)
     public String deletePostOk(@PathVariable("id") int id)  {
-        if(boardService.deleteBoard(id) == 0)
+        if(marketService.deleteMarket(id) == 0)
             System.out.println("데이터 삭제 실패 ");
         else
             System.out.println("데이터 삭제 성공!!!");
         return "redirect:../list";
     }
 
-    @RequestMapping(value = "board/view/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "market/view/{id}", method = RequestMethod.GET)
     public String viewPost(@PathVariable("id") int id, Model model) {
-        BoardVO boardVO = boardService.getBoard(id);
+        MarketVO boardVO = marketService.getMarket(id);
         model.addAttribute("u", boardVO);
         return "view";
     }
