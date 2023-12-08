@@ -35,9 +35,9 @@
             <:</td><td><form:input type="text" path="product"/></td></tr>
             <tr><td>Price:</td><td><form:input type="text" path="price"/></td></tr>
             <tr><td>Category:</td><td><form:input type="text" path="category"/></td></tr>
+            <tr><td>Detail:</td><td><form:textarea name="detail" cols="50" rows="5" path="detail"/></td></tr>
             <tr><td>Location:</td><td><form:input type="text" path="location"/></td></tr>
             <tr><td>Time:</td><td><form:input type="text" path="dealtime"/></td></tr>
-            <%--		<tr><td>Content:</td><td><form:textarea name="content" cols="50" rows="5" path="content"/></td></tr>--%>
             <tr><td><a href="list.jsp">View All Records</a></td><td align="right"><input type="submit" value="Edit Post"/></td></tr>
         </table>
         <tr>

@@ -30,6 +30,10 @@
 			<td><input type="text" name="category"/></td>
 		</tr>
 		<tr>
+			<td>Detail:</td>
+			<td><input type="textarea" cols="50" rows="5" name="detail"/></td>
+		</tr>
+		<tr>
 			<td>Location:</td>
 			<td><input type="text" name="location"/></td>
 		</tr>
