@@ -31,18 +31,38 @@
 <div>
 
     <table>
+        <table id="edit">
+            <:</td><td><form:input type="text" path="product"/></td></tr>
+            <tr><td>Price:</td><td><form:input type="text" path="price"/></td></tr>
+            <tr><td>Category:</td><td><form:input type="text" path="category"/></td></tr>
+            <tr><td>Location:</td><td><form:input type="text" path="location"/></td></tr>
+            <tr><td>Time:</td><td><form:input type="text" path="dealtime"/></td></tr>
+            <%--		<tr><td>Content:</td><td><form:textarea name="content" cols="50" rows="5" path="content"/></td></tr>--%>
+            <tr><td><a href="list.jsp">View All Records</a></td><td align="right"><input type="submit" value="Edit Post"/></td></tr>
+        </table>
         <tr>
-            <td>Title:</td>
-            <td><label name="title">${u.title}</label></td>
+            <td>Seller Name:</td>
+            <td><label name="sellername">${u.sellername}</label></td>
         </tr>
         <tr>
-            <td>Writer:</td>
-            <td><label name="writer">${u.writer}</label></td>
+            <td>Product Name:</td>
+            <td><label name="product">${u.product}</label></td>
         </tr>
         <tr>
-            <td>Content:</td>
-            <td><label name="writer">${u.content}</label></td>
-            <%--            <td><textarea cols="50" rows="5" name="content">${u.content} </textarea></td>--%>
+            <td>Price:</td>
+            <td><label name="price">${u.price}</label></td>
+        </tr>
+        <tr>
+            <td>Category:</td>
+            <td><label name="category">${u.cateogory}</label></td>
+        </tr>
+        <tr>
+            <td>Location:</td>
+            <td><label name="location">${u.location}</label></td>
+        </tr>
+        <tr>
+            <td>Time:</td>
+            <td><label name="dealtime">${u.dealtime}</label></td>
         </tr>
         <tr>
             <td><input type="button" value="Back to List" onclick="history.back()"/></td>

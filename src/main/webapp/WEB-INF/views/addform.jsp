@@ -26,8 +26,16 @@
 			<td><input type="text" name="price"/></td>
 		</tr>
 		<tr>
-			<td>Content:</td>
-			<td><textarea cols="50" rows="5" name="content"></textarea></td>
+			<td>Category:</td>
+			<td><input type="text" name="category"/></td>
+		</tr>
+		<tr>
+			<td>Location:</td>
+			<td><input type="text" name="location"/></td>
+		</tr>
+		<tr>
+			<td>Time:</td>
+			<td><input type="text" name="dealtime"/></td>
 		</tr>
 		<tr>
 			<td><a href="list">View All Records</a></td>

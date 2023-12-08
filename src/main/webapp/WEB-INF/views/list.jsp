@@ -43,19 +43,25 @@
 <table id="list" width="90%">
     <tr>
         <th>Id</th>
-        <th>Title</th>
-        <th>Writer</th>
-        <th>Content</th>
-        <th>Regdate</th>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Category</th>
+        <th>Seller</th>
+        <th>Location</th>
+        <th>Time</th>
+        <th>Registered Time</th>
         <th>Edit</th>
         <th>Delete</th>
     </tr>
     <c:forEach items="${list}" var="u">
         <tr>
             <td>${u.seq}</td>
-            <td><a href="view/${u.seq}">${u.title}</a></td>
-            <td>${u.writer}</td>
-            <td>${u.content}</td>
+            <td><a href="view/${u.seq}">${u.product}</a></td>
+            <td>${u.price}</td>
+            <td>${u.category}</td>
+            <td>${u.sellername}</td>
+            <td>${u.location}</td>
+            <td>${u.dealtime}</td>
             <td>${u.regdate}</td>
             <td><a href="editform/${u.seq}">Edit</a></td>
             <td><a href="deleteok/${u.seq}" onclick="delete_ok()">Delete</a></td>
