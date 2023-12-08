@@ -31,15 +31,6 @@
 <div>
 
     <table>
-        <table id="edit">
-            <:</td><td><form:input type="text" path="product"/></td></tr>
-            <tr><td>Price:</td><td><form:input type="text" path="price"/></td></tr>
-            <tr><td>Category:</td><td><form:input type="text" path="category"/></td></tr>
-            <tr><td>Detail:</td><td><form:textarea name="detail" cols="50" rows="5" path="detail"/></td></tr>
-            <tr><td>Location:</td><td><form:input type="text" path="location"/></td></tr>
-            <tr><td>Time:</td><td><form:input type="text" path="dealtime"/></td></tr>
-            <tr><td><a href="list.jsp">View All Records</a></td><td align="right"><input type="submit" value="Edit Post"/></td></tr>
-        </table>
         <tr>
             <td>Seller Name:</td>
             <td><label name="sellername">${u.sellername}</label></td>
@@ -55,6 +46,10 @@
         <tr>
             <td>Category:</td>
             <td><label name="category">${u.cateogory}</label></td>
+        </tr>
+        <tr>
+            <td>Detail:</td>
+            <td><label name="detail">${u.detail}</label></td>
         </tr>
         <tr>
             <td>Location:</td>

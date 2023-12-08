@@ -31,7 +31,7 @@
 		</tr>
 		<tr>
 			<td>Detail:</td>
-			<td><input type="textarea" cols="50" rows="5" name="detail"/></td>
+			<td><textarea cols="50" rows="5" name="detail"/></td>
 		</tr>
 		<tr>
 			<td>Location:</td>
