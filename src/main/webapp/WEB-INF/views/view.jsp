@@ -45,7 +45,7 @@
         </tr>
         <tr>
             <td>Category:</td>
-            <td><label name="category">${u.cateogory}</label></td>
+            <td><label name="category">${u.category}</label></td>
         </tr>
         <tr>
             <td>Detail:</td>
