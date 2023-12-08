@@ -27,7 +27,16 @@
 		</tr>
 		<tr>
 			<td>Category:</td>
-			<td><input type="text" name="category"/></td>
+			<td><label for="state" class="form-label"></label>
+				<select class="form-select" id="state" name="category">
+					<option value="">상품 종류를 선택하세요</option>
+					<option value="식품">식품</option>
+					<option value="전자제품">전자제품</option>
+					<option value="의류">의류</option>
+					<option value="뷰티">뷰티</option>
+					<option value="쥬얼리">쥬얼리</option>
+					<option value="etc">etc</option>
+				</select></td>
 		</tr>
 		<tr>
 			<td>Detail:</td>
